@@ -26,4 +26,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/my-node-app1:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/my-node-appp1:latest
+
+      - name: Show Docker images
+        run: docker images
